@@ -1,0 +1,23 @@
+{
+  "name": "diff-encrypt",
+  "version": "1.0.0",
+  "description": "diff encryption and decryption",
+  "main": "diff.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmbeex/diff-encrypt.git"
+  },
+  "keywords": [
+    "diff",
+    "crypt"
+  ],
+  "author": "明",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zmbeex/diff-encrypt/issues"
+  },
+  "homepage": "https://github.com/zmbeex/diff-encrypt#readme"
+}
