@@ -1,4 +1,4 @@
-import { endiff, dediff, ignoreFeedLine } from './diff';
+const { endiff, dediff, ignoreFeedLine } = require('./diff');
 
 (() => {
   const oldText = `// 旧的数据有中文;

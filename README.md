@@ -50,3 +50,9 @@ console.log(diffResult.result);
 console.log(originStr.result === ignoreFeedLine(newText), diffResult.compressibility);
 
 ```
+
+#### TEST
+
+```js
+node ./diff_demo.js
+```

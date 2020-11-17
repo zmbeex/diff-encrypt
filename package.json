@@ -1,6 +1,6 @@
 {
   "name": "diff-encrypt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "diff encryption and decryption",
   "main": "diff.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "diff",
     "crypt"
   ],
-  "author": "明",
+  "author": "zmbeex",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zmbeex/diff-encrypt/issues"
