@@ -11,9 +11,9 @@ const getNotword = (src: string, dist: string): string => {
   return notword;
 };`;
 
-  const newText = `// delete all chinese words;
+  const newText = `// delete all chinese;
 const getNotword = (src: string, dist: string): string => {
-  //
+  // notword, 
   const srcDist = src + dist;
   const notword = config.notwords.find((v: string) => {
     return srcDist.indexOf(v) === -1;

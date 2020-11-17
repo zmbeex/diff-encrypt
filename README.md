@@ -33,9 +33,9 @@ const getNotword = (src: string, dist: string): string => {
   return notword;
 };`;
 
-const newText = `// delete all chinese words;
+const newText = `// delete all chinese;
 const getNotword = (src: string, dist: string): string => {
-  //
+  // notword, 
   const srcDist = src + dist;
   const notword = config.notwords.find((v: string) => {
     return srcDist.indexOf(v) === -1;
@@ -45,10 +45,28 @@ const getNotword = (src: string, dist: string): string => {
 
 const diffResult = endiff(oldText, newText);
 const originStr = dediff(oldText, diffResult.result);
-// α10α65α97α150αα// delete all chinese words;α;
+// α10α67α98α151αα// delete all chineseαnotword, α
 console.log(diffResult.result);
-// true 17.62
+// true
 console.log(originStr.result === ignoreFeedLine(newText), diffResult.compressibility);
+
+```
+
+#### CONFIG
+
+```ts
+// declare const config: {
+//     notwords: string[];
+//     minBlockLength: number;
+//     ignoreLineBreak: boolean;
+// };
+import { config } from 'diff-encrypt';
+// 查找未目标字符，可以设置
+config.notwords = 'αβγδεζηθικλμνξοπρστυφχψω∫∮∝∞∧∨∑∏∪∩∈姖姗姘姙姛姝姞姟姠姡'.split('');
+// 设置最小块长度
+config.minBlockLength = 10;
+// 是否忽略换行符,true时，将所有\r\n和\r转换成为\n
+config.ignoreLineBreak = true
 
 ```
 
