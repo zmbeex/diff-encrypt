@@ -1,6 +1,7 @@
 # diff-encrypt
 
 [diff-encrypt](https://github.com/zmbeex/diff-encrypt.git) 使用diff算法，对文本等加密和还原，用于文档提交等，目标已存在旧副本的情况。
+The diff algorithm is used to encrypt and restore the text, which is used for document submission, etc. the old copy of the target already exists.
 
 #### NPM
 
