@@ -23,8 +23,8 @@ const getNotword = (src: string, dist: string): string => {
 
   const diffResult = endiff(oldText, newText);
   const originStr = dediff(oldText, diffResult.result);
-  // α10α65α97α150αα// delete all chinese words;α;
+  // α10α67α98α151αα// delete all chineseαnotword, α
   console.log(diffResult.result);
-  // true 17.62
+  // true 18.95
   console.log(originStr.result === ignoreFeedLine(newText), diffResult.compressibility);
 })();
